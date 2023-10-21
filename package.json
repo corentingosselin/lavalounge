@@ -1,4 +1,5 @@
 {
+  "homepage": "https://corentingosselin.github.io/lavalounge",
   "name": "lavalounge",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.40",
@@ -18,6 +21,7 @@
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
+    "gh-pages": "^6.0.0",
     "postcss": "^8",
     "tailwindcss": "^3"
   }
