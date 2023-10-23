@@ -27,7 +27,7 @@ const Navbar = () => {
     <div style={styles.navbar}>
       <div>
         <Image
-          src="/logo.png"
+          src="/logo-lava.png"
           alt="Logo"
           style={styles.logo}
           width={50}
