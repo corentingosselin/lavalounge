@@ -26,10 +26,12 @@ const Navbar = () => {
   return (
     <div style={styles.navbar}>
       <div>
-        <img
-          src="/logo-lava.png"
+        <Image
+            src={`${basePath}/logo-lava.png`}
           alt="Logo"
           style={styles.logo}
+          width={50}
+          height={100}
         />
       </div>
       <div style={styles.navbarItems} className="flex space-x-4">
