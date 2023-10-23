@@ -1,11 +1,13 @@
 // components/BackgroundVideo.js
 "use client";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 function BackgroundVideo() {
     return (
         <div className="video-container">
             <video playsInline="playsinline" autoPlay="autoplay" muted="muted" loop="loop">
-                <source src="/background-video.mp4" type="video/mp4" />
+                <source src={`${prefix}` + "/background-video.mp4"} type="video/mp4" />
             </video>
             <style jsx>{`
                 .video-container {
