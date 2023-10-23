@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+
 const Navbar = () => {
   const styles = {
     navbar: {
@@ -27,7 +30,7 @@ const Navbar = () => {
     <div style={styles.navbar}>
       <div>
         <Image
-            src={`${basePath}/logo-lava.png`}
+            src={`${prefix}/logo-lava.png`}
           alt="Logo"
           style={styles.logo}
           width={50}

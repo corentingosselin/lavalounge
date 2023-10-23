@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
+const NEXT_PUBLIC_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const nextConfig = {
     output: 'export',
-    basePath: process.env.NODE_ENV === 'production' ? '/lavalounge' : '', 
-    images: {
-        unoptimized: true
-    }
+    basePath: NEXT_PUBLIC_BASE_PATH,
+    assetPrefix: NEXT_PUBLIC_BASE_PATH
 }
 
 module.exports = nextConfig
