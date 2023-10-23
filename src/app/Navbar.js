@@ -34,7 +34,7 @@ const Navbar = () => {
           alt="Logo"
           style={styles.logo}
           width={50}
-          height={100}
+          height={50}
         />
       </div>
       <div style={styles.navbarItems} className="flex space-x-4">
